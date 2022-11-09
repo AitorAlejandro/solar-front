@@ -12,6 +12,13 @@ const appRoutes: Routes = [
     loadChildren: () =>
       import('./modules/home/home.module').then(m => m.HomeModule),
   },
+  {
+    path: 'self-consumption',
+    loadChildren: () =>
+      import('./modules/self-consumption/self-consumption.module').then(
+        m => m.SelfConsumptionModule
+      ),
+  },
 ];
 
 @NgModule({

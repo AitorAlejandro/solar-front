@@ -19,6 +19,13 @@ const appRoutes: Routes = [
         m => m.SelfConsumptionModule
       ),
   },
+  {
+    path: 'calculator',
+    loadChildren: () =>
+      import('./modules/calculator/calculator.module').then(
+        m => m.CalculatorModule
+      ),
+  },
 ];
 
 @NgModule({

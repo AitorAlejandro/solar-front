@@ -26,6 +26,13 @@ const appRoutes: Routes = [
         m => m.CalculatorModule
       ),
   },
+  {
+    path: 'car-charger',
+    loadChildren: () =>
+      import('./modules/car-charger/car-charger.module').then(
+        m => m.CarChargerModule
+      ),
+  },
 ];
 
 @NgModule({

@@ -8,9 +8,8 @@ describe('EvPortableComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EvPortableComponent ]
-    })
-    .compileComponents();
+      declarations: [EvPortableComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(EvPortableComponent);
     component = fixture.componentInstance;

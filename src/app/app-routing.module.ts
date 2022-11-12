@@ -33,6 +33,11 @@ const appRoutes: Routes = [
         m => m.CarChargerModule
       ),
   },
+  {
+    path: 'contact',
+    loadChildren: () =>
+      import('./modules/contact/contact.module').then(m => m.ContactModule),
+  },
 ];
 
 @NgModule({
